@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web-Dev Task 1: Normal Mode</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="score">
+            <p class="cur-score">Score: 0</p>
+            <p class="timer">Time remaining: 60</p>
+            <p class="high-score">High Score: 0</p>
+        </div>
+        <div class="out">
+            <div class="gridbox">
+                <div class="snakeHead"></div>
+                <div class="snakeBody"></div>
+                <div class="snakeTail"></div>
+                <div class="greenFood"></div>
+                <div class="blueFood"></div>
+                <div class="pinkFood"></div>
+                <div class="yellowFood"></div>
+                <div class="brownFood"></div>
+            </div>
+        </div>
+        <div>
+            <p class="colour">Order of colours:</p>
+            <div class="col-outer">
+                <div class="green-display"></div>
+                <div class="blue-display"></div>
+                <div class="pink-display"></div>
+                <div class="yellow-display"></div>
+                <div class="brown-display"></div>
+            </div>
+        </div>
+        <div class="time">
+            <button class="timerButton" onclick="
+                addTimer();
+            ">Start</button>
+        </div>
+        <div class="up-button">
+            <button class="up" onclick="
+                moveSnakeU();
+            "><img src="up-button.png" class="img"></button>
+        </div>
+        <div class="left-right">
+            <button class="left" onclick="
+                moveSnakeL();
+            "><img src="left-button.png" class="img"></button>
+            <button class="right" onclick="
+                moveSnakeR();
+            "><img src="right-button.png" class="img"></button>
+        </div>
+        <div class="down-button">
+            <button class="down" onclick="
+                moveSnakeD();
+            "><img src="scroll-down.jpg" class="img"></button>
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>

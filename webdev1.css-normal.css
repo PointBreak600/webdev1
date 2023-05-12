@@ -1,0 +1,156 @@
+body{
+    background-color: rgb(59, 17, 98);
+}
+.score{
+    display:flex;
+    justify-content:space-between;
+}
+.cur-score{
+    color:white;
+    font-family:Arial;
+    font-size:20px;
+    margin-top:5px;
+}
+.high-score{
+    color:white;
+    font-family:Arial;
+    font-size:20px;
+    margin-top:5px;
+}
+.timer{
+    color:white;
+    font-family:Arial;
+    font-size:20px;
+    margin-top:5px;
+}
+.out{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.gridbox{
+    background-color: rgb(7, 6, 6);
+    width:400px;
+    height:400px;
+    flex-wrap: wrap;
+    position:relative;
+}
+.img{
+    width:30px;
+    padding-top:4px;
+}
+.time{
+    display:flex;
+    justify-content:center;
+}
+.up-button{
+    display:flex;
+    justify-content: center;
+    margin-top:10px;
+}
+.left-right{
+    display:flex;
+    justify-content:center;
+}
+.left{
+    margin-right: 20px;
+}
+.down-button{
+    display:flex;
+    justify-content: center;
+}
+.snakeHead{
+    background-color: rgb(120, 1, 1);
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:3;
+}
+.snakeBody{
+    background-color: red;
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:2;
+}
+.snakeTail{
+    background-color: rgb(249, 81, 81);
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:1;
+}
+.greenFood{
+    background-color: green;
+    width:10px;
+    height:10px;
+    position:absolute;
+}
+.blueFood{
+    background-color:blue;
+    width:10px;
+    height:10px;
+    position:absolute;
+}
+.pinkFood{
+    background-color: pink;
+    width:10px;
+    height:10px;
+    position:absolute;
+}
+.yellowFood{
+    background-color: yellow;
+    width:10px;
+    height:10px;
+    position:absolute;
+}
+.brownFood{
+    background-color: brown;
+    width:10px;
+    height:10px;
+    position:absolute;
+}
+.colour{
+    color:white;
+    display:flex;
+    justify-content: center;
+}
+.col-outer{
+    display:flex;
+    justify-content:center;
+}
+.green-display{
+    background-color:green;
+    width:10px;
+    height:10px;
+    margin-bottom:10px;
+    margin-right:5px;
+}
+.blue-display{
+    background-color:blue;
+    width:10px;
+    height:10px;
+    margin-bottom:10px;
+    margin-right:5px;
+}
+.pink-display{
+    background-color:pink;
+    width:10px;
+    height:10px;
+    margin-bottom:10px;
+    margin-right:5px;
+}
+.yellow-display{
+    background-color:yellow;
+    width:10px;
+    height:10px;
+    margin-bottom:10px;
+    margin-right:5px;
+}
+.brown-display{
+    background-color:brown;
+    width:10px;
+    height:10px;
+    margin-bottom:10px;
+    margin-right:5px;
+}
