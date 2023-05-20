@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web-Dev Task 1: HackerMode</title>
+        <link rel="stylesheet" href="web1.css-hacker.css">
+    </head>
+    <body>
+        <audio class="hit-wall" src="Bonk.mp4">
+            Your browser does not support the audio tag.
+        </audio>
+        <div class="start-overlay">
+            <p class="gridtext">Please enter grid size:</p>
+            <div class="input-area">
+                <input type="text" placeholder="Give the number of rows greater than 20" class="input-text">
+                <button onclick="gridSetup();">Enter</button>
+            </div>
+            <div class="time">
+                <button class="time-button" onclick="
+                    addTimer();
+                ">Start</button>
+            </div>
+        </div>
+        <div class="overlay">
+            <p class="pause-text">Game paused!</p>
+            <div class="resume-div">
+                <button class="resume-button" onclick="
+                    resumeGame();
+                ">Resume</button>
+            </div>
+        </div>
+        <div class="score">
+            <p class="cur-score">Score: 0</p>
+            <p class="lives">Lives: 3</p>
+            <button class="pause" onclick="
+                pauseGame();
+            "><img src="pause-button.png" class="pause-img"></button>
+            <p class="timer">Time remaining: 60</p>
+            <p class="high-score">High Score: 0</p>
+        </div>
+        <div class="out">
+            <div class="gridbox">
+                <div class="snakeHead"></div>
+                <div class="snakeBody"></div>
+                <div class="snakeTail"></div>
+                <div class="snakeTail1"></div>
+                <div class="snakeTail2"></div>
+                <div class="snakeTail3"></div>
+                <div class="snakeTail4"></div>
+                <div class="snakeTail5"></div>
+                <div class="greenFood">S</div>
+                <div class="blueFood">N</div>
+                <div class="pinkFood">A</div>
+                <div class="yellowFood">K</div>
+                <div class="brownFood">E</div>
+                <div class="powerUp"></div>
+            </div>
+        </div>
+        <div>
+            <p class="colour">Order of letters:</p>
+            <div class="col-outer">
+                <div class="display">S</div>
+                <div class="display">N</div>
+                <div class="display">A</div>
+                <div class="display">K</div>
+                <div class="display">E</div>
+            </div>
+        </div>
+        <div class="up-button">
+            <button class="up" onclick="
+                moveSnakeU();
+            "><img src="up-button.png" class="img"></button>
+        </div>
+        <div class="left-right">
+            <button class="left" onclick="
+                moveSnakeL();
+            "><img src="left-button.png" class="img"></button>
+            <button class="right" onclick="
+                moveSnakeR();
+            "><img src="right-button.png" class="img"></button>
+        </div>
+        <div class="down-button">
+            <button class="down" onclick="
+                moveSnakeD();
+            "><img src="scroll-down.jpg" class="img"></button>
+        </div>
+        <script src="web1.js-hacker.js"></script>
+    </body>
+</html>

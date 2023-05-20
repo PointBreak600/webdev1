@@ -1,0 +1,256 @@
+body{
+    background-color: rgb(59, 17, 98);
+}
+.start-overlay{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(83, 83, 189,0.5);
+    z-index:1000000;
+}
+.gridtext{
+    display:flex;
+    justify-content:center;
+    margin-top:100px;
+    color:white;
+    font-size:30px;
+}
+.input-area{
+    display:flex;
+    justify-content: center;
+}
+.input-text{
+    width:400px;
+    height:50px;
+}
+.time{
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+}
+.overlay{
+    position:absolute;
+    display:none;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(83, 83, 189,0.5);
+    z-index:1000000;
+}
+.pause-text{
+    color:white;
+    font-size:30px;
+    display:flex;
+    justify-content: center;
+    margin-top:50px;
+}
+.resume-div{
+    margin:auto;
+    text-align:center;
+}
+.resume-button{
+    padding:20px 20px 20px 20px;
+    font-size:20px;
+}
+.score{
+    display:flex;
+    justify-content:space-between;
+}
+.cur-score{
+    color:white;
+    font-family:Arial;
+    font-size:20px;
+    margin-top:5px;
+}
+.high-score{
+    color:white;
+    font-family:Arial;
+    font-size:20px;
+    margin-top:5px;
+}
+.lives{
+    color:white;
+    font-family:Arial;
+    font-size:20px;
+    margin-top:5px;
+}
+.pause{
+    padding:0;
+    width:50px;
+    height:30px;
+    border:1px solid black;
+}
+.pause:active{
+    opacity:0.5;
+}
+.pause-img{
+    width:45px;
+    object-fit:cover;
+}
+.timer{
+    color:white;
+    font-family:Arial;
+    font-size:20px;
+    margin-top:5px;
+}
+.out{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.gridbox{
+    background-color: rgb(59, 17, 98);
+    width:400px;
+    height:400px;
+    flex-wrap: wrap;
+    position:relative;
+}
+.img{
+    width:30px;
+    padding-top:4px;
+}
+.up-button{
+    display:flex;
+    justify-content: center;
+    margin-top:10px;
+}
+.left-right{
+    display:flex;
+    justify-content:center;
+}
+.left{
+    margin-right: 20px;
+}
+.down-button{
+    display:flex;
+    justify-content: center;
+}
+.snakeHead{
+    background-color: rgb(59, 17, 98);
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:30;
+}
+.snakeBody{
+    background-color: rgb(59, 17, 98);
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:29;
+}
+.snakeTail{
+    background-color: rgb(59, 17, 98);
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:28;
+}
+.snakeTail1{
+    background-color: rgb(59, 17, 98);
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:5;
+}
+.snakeTail2{
+    background-color: rgb(59, 17, 98);
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:4;
+}
+.snakeTail3{
+    background-color: rgb(59, 17, 98);
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:3;
+}
+.snakeTail4{
+    background-color: rgb(59, 17, 98);
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:2;
+}
+.snakeTail5{
+    background-color: rgb(59, 17, 98);
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:1;
+}
+.greenFood{
+    color:white;
+    font-size:10px;
+    text-align: center;
+    width:10px;
+    height:10px;
+    position:absolute;
+}
+.blueFood{
+    color:white;
+    font-size:10px;
+    text-align: center;
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:6;
+}
+.pinkFood{
+    color:white;
+    font-size:10px;
+    text-align: center;
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:6;
+}
+.yellowFood{
+    color:white;
+    font-size:10px;
+    text-align: center;
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:6;
+}
+.brownFood{
+    color:white;
+    font-size:10px;
+    text-align: center;
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:6;
+}
+.powerUp{
+    background-color:rgb(59, 17, 98);
+    width:10px;
+    height:10px;
+    position:absolute;
+    z-index:6;
+}
+.colour{
+    color:white;
+    display:flex;
+    justify-content: center;
+}
+.col-outer{
+    display:flex;
+    justify-content:center;
+}
+.display{
+    color:white;
+    font-size:10px;
+    text-align: center;
+    width:10px;
+    height:10px;
+    margin-bottom:10px;
+    margin-right:5px;
+}
