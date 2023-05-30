@@ -7,23 +7,25 @@ canvas.height = windowHeight;
 let c = canvas.getContext('2d');
 window.addEventListener('keydown', onKeyDown);
 window.addEventListener('keyup', onKeyUp);
-let keyD, keyS, keyA, keyW, bulletRadius = 10, bot, myInterval, score=0;
+let keyD, keyS, keyA, keyW, bulletRadius = 10, bot, myInterval, score=0, gameState=false;
 let bulletArray = [], botArray = [];
 function onKeyDown(event) {
   let keyCode = event.keyCode;
-  switch (keyCode) {
-    case 68: //d
-      keyD = true;
-      break;
-    case 83: //s
-      keyS = true;
-      break;
-    case 65: //a
-      keyA = true;
-      break;
-    case 87: //w
-      keyW = true;
-      break;
+  if(!gameState){
+    switch (keyCode) {
+      case 68: //d
+        keyD = true;
+        break;
+      case 83: //s
+        keyS = true;
+        break;
+      case 65: //a
+        keyA = true;
+        break;
+      case 87: //w
+        keyW = true;
+        break;
+    }
   }
 }
 function onKeyUp(event) {
@@ -85,7 +87,7 @@ class Circle {
 }
 let circle = new Circle(windowWidth / 2, 680, 30);
 document.addEventListener('click', function(event) {
-  if (event.button === 0) {
+  if (!gameState && event.button === 0) {
     let mouseClickPos = {
       x: event.clientX,
       y: event.clientY
@@ -196,6 +198,7 @@ function checkHomeCollision(bot, home){
       healthBar.lives--;
       if(healthBar.lives<=0){
         botArray.splice(0, botArray.length);
+        gameState=true;
         gameOver();
         return;
       }
